@@ -4,6 +4,7 @@ Imports System.Numerics
 Module myToolbox
     Sub Main(args As String())
         Dim testData() As Integer = {7, 102, 9, 7, 36, 76, 92, 77, 64, 103, 102, 57, 19, 38, 88, 48, 68, 84, 94, 18, 59, 52, 70, 17, 85, 45, 82, 25, 97, 10, 74, 19, 32, 41, 17, 29, 89, 47, 7, 16, 32, 42, 12, 62, 84, 74, 99, 13, 31, 80, 97, 23, 92, 24, 50, 59, 104, 87, 99, 93, 75, 77, 78, 63, 98, 104, 17, 62, 99, 92, 69, 10, 66, 54, 105, 63, 83, 25, 12, 58, 99, 65, 34, 85, 64, 29, 72, 19, 60, 25, 81, 26, 11, 17, 66, 61, 69, 63, 43, 89}
+        Dim moreTestData() As String = {"atattta", "aaaakaka", "ata", "aba", "zada", "ktar", "tusnao", "akaw", "para", "star", "sawk", "taro", "read", "undisturbed", "money", "clarity", "care", "intersection", "everything", "nineteen eighty four", "goals", "economic", "return", "change", "excacerbate", "cigarette", "candy", "and", "vanilla", "sky", "table", "safety", "boek", "book", "zebra", "couch", "close", "far"}
         'binomialExpansionCalc(1, 4, 6)
 
         'For x = 0 To 9
@@ -20,7 +21,7 @@ Module myToolbox
 
         Console.WriteLine(DenToBin(255))
         Console.WriteLine(" ")
-        universalBubbleSort(testData)
+        universalBubbleSort(moreTestData)
     End Sub
 
     'literal maths shit
