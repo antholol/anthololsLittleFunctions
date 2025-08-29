@@ -1,1 +1,1 @@
-heres some small subroutines that ive made
+heres some small functions that ive made
