@@ -20,9 +20,10 @@ Module myToolbox
         '   Console.WriteLine((factorial(x)))
         'Next x
 
-        Console.WriteLine(DenToBin(255))
-        Console.WriteLine(" ")
-        universalBubbleSort(testData)
+        'Console.WriteLine(DenToBin(255))
+        'Console.WriteLine(" ")
+        'universalBubbleSort(testData)
+        insertionSort(testData)
     End Sub
 
     'literal maths shit
@@ -127,5 +128,28 @@ Module myToolbox
 
         Return arrayToSort
     End Function
+
+    Sub insertionSort(ByVal arrayToSort As Array)
+        Dim placed As Boolean = False
+        Dim counter As Integer = 0
+        Dim temp As Object
+
+        For i = 1 To arrayToSort.Length - 1
+            placed = False
+            counter = i
+            Do
+                counter = counter - 1
+                If arrayToSort(counter) >= arrayToSort(counter + 1) Then
+                    temp = arrayToSort(counter + 1)
+                    arrayToSort(counter + 1) = arrayToSort(counter)
+                    arrayToSort(counter) = temp
+                Else
+                    placed = True
+                End If
+            Loop Until placed = True Or counter = 0
+
+        Next i
+
+    End Sub
 
 End Module
